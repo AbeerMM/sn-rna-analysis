@@ -19,5 +19,5 @@ dependencies:
     - MulticoreTSNE
     - scanpy==1.1
     - anndata==0.6.4
-    - louvain==0.6.1
+    - louvain
     - jupyter-wysiwyg
