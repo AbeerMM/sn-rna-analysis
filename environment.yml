@@ -4,6 +4,10 @@ channels:
 dependencies:
   - python
   - numpy
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
+  - RISE
+  - jupyter-wysiwyg
   - pip:
     - nbgitpuller
     - sphinx-gallery
@@ -15,8 +19,4 @@ dependencies:
     - MulticoreTSNE
     - scanpy==1.1
     - anndata==0.6.4
-    - louvain==0.6.1 
-    - jupyter_contrib_nbextensions
-    - jupyter_nbextensions_configurator
-    - RISE
-    - jupyter-wysiwyg
+    - louvain==0.6.1
