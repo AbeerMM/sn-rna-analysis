@@ -19,3 +19,9 @@ dependencies:
     - louvain==0.6.1 
     - jupyter_contrib_nbextensions
     - jupyter_nbextensions_configurator
+presentation:
+  - pip:
+    - jupyter_contrib_nbextensions
+    - jupyter_nbextensions_configurator
+    - RISE
+    - jupyter-wysiwyg
