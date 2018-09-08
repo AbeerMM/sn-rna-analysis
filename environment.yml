@@ -1,6 +1,9 @@
 name: example-environment 
 channels:
   - conda-forge
+  - defaults
+envs_dirs:
+  - /home/jovyan/work/envs
 dependencies:
   - python
   - numpy
