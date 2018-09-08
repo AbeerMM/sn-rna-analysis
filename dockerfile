@@ -1,4 +1,23 @@
-FROM jupyter/r-notebook:599db13f9123
+FROM jupyter/scipy-notebook:cf6258237ff9
+
+ENV NB_USER jovyan
+ENV NB_UID 1000
+ENV HOME /home/${NB_USER}
+
+# Make sure the contents of our repo are in ${HOME}
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
+
+# Specify the default command to run
+CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+
 
 MAINTAINER Abeer Almutairy <abeer1uw@gmail.com>
 LABEL authors="Abeer Almutairy"
@@ -25,6 +44,7 @@ USER $NB_USER
 
 #WORKDIR ${HOME}
 
+RUN pip install --no-cache-dir notebook==5.*
 RUN echo "c.NotebookApp.token = u''" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.iopub_data_rate_limit=1e22" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN conda install -c marufr python-igraph 
