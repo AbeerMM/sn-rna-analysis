@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:cf6258237ff9
+FROM jupyter/datascience-notebook:628fbcb24afd
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
