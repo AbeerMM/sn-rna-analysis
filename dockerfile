@@ -1,4 +1,4 @@
-FROM jupyter/r-notebook:599db13f9123
+#FROM jupyter/r-notebook:599db13f9123
 
 MAINTAINER Abeer Almutairy <abeer1uw@gmail.com>
 LABEL authors="Abeer Almutairy"
@@ -29,10 +29,13 @@ RUN echo "c.NotebookApp.token = u''" >> $HOME/.jupyter/jupyter_notebook_config.p
 RUN echo "c.NotebookApp.iopub_data_rate_limit=1e22" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN conda install -c marufr python-igraph 
 
-RUN conda install jupyter_contrib_nbextensions
-RUN conda install -c conda-forge jupyter_contrib_nbextensions
-RUN conda install -c conda-forge jupyter_nbextensions_configurator
+#RUN conda install jupyter_contrib_nbextensions
+#RUN conda install -c conda-forge jupyter_contrib_nbextensions
 RUN pip install jupyter_contrib_nbextensions
+
+#RUN conda install -c conda-forge jupyter_nbextensions_configurator
+RUN pip install jupyter_nbextensions_configurator
+RUN jupyter nbextensions_configurator enable --user
 
 RUN pip install --upgrade pip
 RUN pip install matplotlib
