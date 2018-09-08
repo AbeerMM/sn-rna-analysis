@@ -9,7 +9,6 @@ dependencies:
     - sphinx-gallery
     - pandas
     - matplotlib
-    - scanpy.api
     - pathlib
     - igraph
     - jgraph
