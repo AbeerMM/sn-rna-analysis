@@ -29,8 +29,8 @@ RUN echo "c.NotebookApp.token = u''" >> $HOME/.jupyter/jupyter_notebook_config.p
 RUN echo "c.NotebookApp.iopub_data_rate_limit=1e22" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN conda install -c marufr python-igraph 
 
-#RUN conda install -c conda-forge jupyter_contrib_nbextensions
-#RUN conda install jupyter_contrib_nbextensions
+RUN conda install jupyter_contrib_nbextensions
+RUN conda install -c conda-forge jupyter_contrib_nbextensions
 RUN conda install -c conda-forge jupyter_nbextensions_configurator
 RUN pip install jupyter_contrib_nbextensions
 
