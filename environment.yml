@@ -1,0 +1,21 @@
+name: example-environment
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip:
+    - nbgitpuller
+    - sphinx-gallery
+    - pandas
+    - matplotlib
+    - scanpy.api
+    - pathlib
+    - igraph
+    - jgraph
+    - MulticoreTSNE
+    - scanpy-1.1
+    - anndata==0.6.4
+    - louvain==0.6.1 
+    - jupyter_contrib_nbextensions
+    - jupyter_nbextensions_configurator
