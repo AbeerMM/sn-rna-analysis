@@ -1,11 +1,9 @@
-name: 
-  - environment 
+name: environment 
 channels:
   - conda-forge
 dependencies:
   - python
   - numpy
-  - rise
   - pip:
     - nbgitpuller
     - sphinx-gallery
@@ -20,6 +18,7 @@ dependencies:
     - louvain==0.6.1 
     - jupyter_contrib_nbextensions
     - jupyter_nbextensions_configurator
+    
 presentation:
   - pip:
     - jupyter_contrib_nbextensions
