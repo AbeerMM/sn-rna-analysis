@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python
   - numpy
+  - rise
   - pip:
     - nbgitpuller
     - sphinx-gallery
