@@ -31,6 +31,7 @@ RUN conda install -c marufr python-igraph
 
 #RUN conda install -c conda-forge jupyter_contrib_nbextensions
 #RUN conda install jupyter_contrib_nbextensions
+RUN conda install -c conda-forge jupyter_nbextensions_configurator
 RUN pip install jupyter_contrib_nbextensions
 
 RUN pip install --upgrade pip
