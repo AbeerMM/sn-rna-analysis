@@ -25,15 +25,13 @@ USER $NB_USER
 
 #WORKDIR ${HOME}
 
-
-
-
-#RUN conda install jupyter_contrib_nbextensions
 RUN echo "c.NotebookApp.token = u''" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.iopub_data_rate_limit=1e22" >> $HOME/.jupyter/jupyter_notebook_config.py
 RUN conda install -c marufr python-igraph 
+
 #RUN conda install -c conda-forge jupyter_contrib_nbextensions
-RUN conda install jupyter_contrib_nbextensions
+#RUN conda install jupyter_contrib_nbextensions
+RUN pip install jupyter_contrib_nbextensions
 
 RUN pip install --upgrade pip
 RUN pip install matplotlib
@@ -43,7 +41,7 @@ RUN pip install jgraph
 RUN pip install MulticoreTSNE
 RUN pip install scanpy.api
 
-pip3 install scanpy-1.1
+RUN pip install scanpy-1.1
 RUN pip install anndata==0.6.4
 RUN pip install numpy==1.13.1
 RUN pip install python-igraph==0.7.1
