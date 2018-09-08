@@ -1,4 +1,4 @@
-name: environment 
+name: example-environment 
 channels:
   - conda-forge
 dependencies:
@@ -16,11 +16,6 @@ dependencies:
     - scanpy==1.1
     - anndata==0.6.4
     - louvain==0.6.1 
-    - jupyter_contrib_nbextensions
-    - jupyter_nbextensions_configurator
-    
-presentation:
-  - pip:
     - jupyter_contrib_nbextensions
     - jupyter_nbextensions_configurator
     - RISE
