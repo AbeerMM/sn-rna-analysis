@@ -23,4 +23,4 @@ dependencies:
     - louvain==0.6.1
     - anndata==0.6.4
     - jupyter-wysiwyg
-    - jupyter-calysto
+    - calysto
