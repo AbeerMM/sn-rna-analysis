@@ -12,7 +12,6 @@ dependencies:
   - widgetsnbextension
   - RISE
   - python-igraph
-  - calysto
   - pip:
     - nbgitpuller
     - sphinx-gallery
