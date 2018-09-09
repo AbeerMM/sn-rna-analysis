@@ -11,7 +11,6 @@ dependencies:
   - ipywidgets
   - widgetsnbextension
   - RISE
-  - python-igraph
   - pip:
     - nbgitpuller
     - sphinx-gallery
@@ -20,6 +19,7 @@ dependencies:
     - pathlib
     - MulticoreTSNE
     - scanpy==1.1
+    - python-igraph
     - louvain==0.6.1
     - anndata==0.6.4
     - jupyter-wysiwyg
