@@ -1,10 +1,11 @@
 name: example-environment 
 channels:
   - conda-forge
+  - ruby
   - defaults
 dependencies:
   - python
-  - numpy
+  - numpy==1.13.1
   - jupyter_contrib_nbextensions
   - jupyter_nbextensions_configurator
   - RISE
@@ -12,10 +13,11 @@ dependencies:
   - pip:
     - nbgitpuller
     - sphinx-gallery
-    - pandas
+    - pandas==0.22.0
     - matplotlib
     - pathlib
     - MulticoreTSNE
     - scanpy==1.1
+    - louvain==0.6.1
     - anndata==0.6.4
     - jupyter-wysiwyg
