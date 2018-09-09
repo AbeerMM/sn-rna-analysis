@@ -9,6 +9,7 @@ dependencies:
   - jupyter_nbextensions_configurator
   - RISE
   - python-igraph
+  - igraph
   - pip:
     - nbgitpuller
     - sphinx-gallery
