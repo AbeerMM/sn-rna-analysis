@@ -1,7 +1,6 @@
 name: example-environment 
 channels:
   - conda-forge
-  - ruby
   - defaults
 dependencies:
   - python
