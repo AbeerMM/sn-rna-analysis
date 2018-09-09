@@ -24,7 +24,7 @@ dependencies:
     - anndata==0.6.4
     - jupyter-wysiwyg
 presentation:
-  - postBuild:
+  postBuild:
     jupyter nbextension install calysto --user
     jupyter nbextension enable calysto/document-tools/main
     jupyter nbextension enable calysto/cell-tools/main
