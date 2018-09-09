@@ -25,7 +25,7 @@ dependencies:
     - jupyter-wysiwyg
 presentation:
   - postBuild:
-    jupyter contrib nbextension install --user
+    jupyter contrib nbextensions install --user
     jupyter nbextension install calysto --user
     jupyter nbextension enable calysto/document-tools/main
     jupyter nbextension enable calysto/cell-tools/main
