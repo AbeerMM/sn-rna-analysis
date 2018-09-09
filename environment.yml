@@ -25,17 +25,17 @@ dependencies:
     - jupyter-wysiwyg
 presentation:
   - postBuild:
-    - jupyter contrib nbextension install --user
-    - jupyter nbextension install calysto --user
-    - jupyter nbextension enable calysto/document-tools/main
-    - jupyter nbextension enable calysto/cell-tools/main
-    - jupyter nbextension enable calysto/spell-check/main
-    - jupyter nbextension enable calysto/publish/main
-    - jupyter nbextension enable calysto/submit/main
-    - jupyter nbextension enable calysto/annotate/main
-    - jupyter nbextension enable --py widgetsnbextension
-    - jupyter nbextension enable python-markdown/main
+    jupyter contrib nbextension install --user
+    jupyter nbextension install calysto --user
+    jupyter nbextension enable calysto/document-tools/main
+    jupyter nbextension enable calysto/cell-tools/main
+    jupyter nbextension enable calysto/spell-check/main
+    jupyter nbextension enable calysto/publish/main
+    jupyter nbextension enable calysto/submit/main
+    jupyter nbextension enable calysto/annotate/main
+    jupyter nbextension enable --py widgetsnbextension
+    jupyter nbextension enable python-markdown/main
 # Notebooks w/ extensions that auto-run code must be "trusted" to work the first time
-  - jupyter trust 2datasets-analysis.ipynb
-  - jupyter trust 2datasets_individually-seurat.ipynb
+    jupyter trust 2datasets-analysis.ipynb
+    jupyter trust 2datasets_individually-seurat.ipynb
 
