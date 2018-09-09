@@ -8,13 +8,13 @@ dependencies:
   - jupyter_contrib_nbextensions
   - jupyter_nbextensions_configurator
   - RISE
+  - python-igraph
   - pip:
     - nbgitpuller
     - sphinx-gallery
     - pandas
     - matplotlib
     - pathlib
-    - python-igraph
     - igraph
     - jgraph
     - MulticoreTSNE
