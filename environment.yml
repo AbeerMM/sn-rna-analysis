@@ -8,6 +8,7 @@ dependencies:
   - numpy==1.13.1
   - jupyter_contrib_nbextensions
   - jupyter_nbextensions_configurator
+  - ipywidgets
   - RISE
   - python-igraph
   - pip:
