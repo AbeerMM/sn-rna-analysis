@@ -1,9 +1,9 @@
 name: example-environment 
 channels:
   - conda-forge
-  - ruby
   - defaults
 dependencies:
+  - ruby
   - python
   - numpy==1.13.1
   - jupyter_contrib_nbextensions
