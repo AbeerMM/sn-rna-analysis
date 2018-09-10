@@ -12,6 +12,7 @@ dependencies:
   - widgetsnbextension
   - RISE
   - python-igraph
+  - igraph
   - pip:
     - nbgitpuller
     - sphinx-gallery
