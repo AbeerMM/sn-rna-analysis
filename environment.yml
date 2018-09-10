@@ -16,7 +16,7 @@ dependencies:
   - pip:
     - nbgitpuller
     - sphinx-gallery
-    - pandas=0.22.4
+    - pandas
     - matplotlib
     - pathlib
     - MulticoreTSNE
